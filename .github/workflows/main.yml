@@ -28,11 +28,11 @@ jobs:
           python -m pip install --upgrade pip
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
 
-      - name: 📦 Install UI dependencies and build
-        working-directory: ui/litellm-dashboard
-        run: |
-          npm install
-          npm run build
+      # - name: 📦 Install UI dependencies and build
+      #   working-directory: ui/litellm-dashboard
+      #   run: |
+      #     npm install
+      #     npm run build
 
       - name: 📂 Upload UI build artifact
         if: success()
