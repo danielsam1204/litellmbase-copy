@@ -1,5 +1,11 @@
 {
+  "name": "litellm-dashboard",
+  "version": "1.0.0",
+  "private": true,
   "dependencies": {
+    "next": "^14.2.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "prism-react-renderer": "^2.4.1",
     "prisma": "^5.17.0",
     "react-copy-to-clipboard": "^5.1.0"
@@ -8,8 +14,8 @@
     "@types/react-copy-to-clipboard": "^5.0.7"
   },
   "scripts": {
-  "dev": "next dev",
-  "build": "next build",
-  "start": "next start"
-}
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  }
 }
