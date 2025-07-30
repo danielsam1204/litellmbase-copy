@@ -28,11 +28,18 @@ jobs:
           python -m pip install --upgrade pip
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
 
-      - name: Install Node.js dependencies and build UI
+      - name: 📦 Install UI dependencies and build
         working-directory: ui/litellm-dashboard
         run: |
           npm install
           npm run build
+
+      - name: 📂 Upload build artifact
+        if: success()
+        uses: actions/upload-artifact@v3
+        with:
+          name: litellm-dashboard-build
+          path: ui/litellm-dashboard/.next/
 
       - name: Log in to Docker Hub
         run: echo ${{ secrets.DOCKER_PASSWORD }} | docker login -u ${{ secrets.DOCKER_USERNAME }} --password-stdin
