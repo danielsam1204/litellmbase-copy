@@ -2,6 +2,11 @@
   "name": "litellm-dashboard",
   "version": "1.0.0",
   "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
   "dependencies": {
     "next": "^14.2.3",
     "react": "^18.2.0",
@@ -12,10 +17,5 @@
   },
   "devDependencies": {
     "@types/react-copy-to-clipboard": "^5.0.7"
-  },
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
   }
 }
