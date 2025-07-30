@@ -12,10 +12,5 @@
   },
   "devDependencies": {
     "@types/react-copy-to-clipboard": "^5.0.7"
-  },
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
   }
 }
